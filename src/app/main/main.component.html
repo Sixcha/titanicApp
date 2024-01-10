@@ -1,0 +1,10 @@
+<div *ngIf="!loggedIn">
+    <div>
+        <app-login (onLogIn)="logIn($event)"></app-login>
+    </div>
+    <div>
+        <app-signup (onSignUp)="signUp($event)"></app-signup>
+    </div>
+</div>
+
+<button (click)="disconnect()" *ngIf="loggedIn">Disconnect</button>
