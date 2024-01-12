@@ -12,12 +12,12 @@ export class LoginComponent {
   password: string = "";
 
   onSubmit(){
-    if(this.username.length){
+    if(!this.username.length){
       alert("Enter a username")
       return
     }
     
-    if (this.password.length){
+    if (!this.password.length){
       alert("Enter a password")
       return
     }

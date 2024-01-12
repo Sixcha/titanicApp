@@ -7,4 +7,8 @@
     </div>
 </div>
 
-<button (click)="disconnect()" *ngIf="loggedIn">Disconnect</button>
+<ng-container *ngIf="loggedIn" >
+    <button (click)="disconnect()" *ngIf="loggedIn">Disconnect</button>
+    {{this.data}}
+
+</ng-container>
